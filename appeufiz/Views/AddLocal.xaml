@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appeufiz.Views.AddLocal">
+
+    <ContentPage.Content>
+        <Grid BackgroundColor="#1A1A1A">
+            <StackLayout>
+                <Label Text=""
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Start">
+                    <ContentView>
+                        <Image Source="eufiz.png" VerticalOptions="Start" HeightRequest="195"/>
+                    </ContentView>
+                </StackLayout>
+            </StackLayout>
+            <ScrollView>
+                <StackLayout Orientation="Vertical" Padding="30,165,30,24" Spacing="10">
+                    <Label Text="NOVO LOCAL" FontSize="32" TextColor="White" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" />
+                </StackLayout>
+            </ScrollView>
+            <ScrollView>
+                <StackLayout Orientation="Vertical" Padding="30,500,30,24" Spacing="10">
+                    <Button x:Name="butConfirmar" Text="Confirmar" FontAttributes="Italic" 
+                        Clicked=""
+                        BackgroundColor="#9BBB59"
+                        TextColor="White"
+                        FontSize="20"
+                        CornerRadius = "25"/>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
