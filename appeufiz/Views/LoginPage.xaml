@@ -5,10 +5,19 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="appeufiz.Views.LoginPage"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#343434">
     <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
-        </StackLayout>
+        <Grid>
+            <StackLayout>
+                <Image Source="eufiz.png"></Image>
+            </StackLayout>
+            <StackLayout Padding="30,0,30,0" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+                <Entry Placeholder="usuario" TextColor="White" PlaceholderColor="DarkGray" BackgroundColor="#5a5a5a"></Entry>
+                <Entry Placeholder="senha" IsPassword="true" TextColor="White" PlaceholderColor="DarkGray" BackgroundColor="#5a5a5a"></Entry>
+                <Button VerticalOptions="Center" Text="Login" BackgroundColor="#1c1c1c" CornerRadius="25" Command="{Binding LoginCommand}"/>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
