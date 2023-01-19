@@ -24,8 +24,7 @@
             </ScrollView>
             <ScrollView>
                 <StackLayout Orientation="Vertical" Padding="30,500,30,24" Spacing="10">
-                    <Button x:Name="butConfirmar" Text="Confirmar" FontAttributes="Italic" 
-                        Clicked=""
+                    <Button x:Name="butConfirmar" Text="Confirmar"
                         BackgroundColor="#9BBB59"
                         TextColor="White"
                         FontSize="20"
