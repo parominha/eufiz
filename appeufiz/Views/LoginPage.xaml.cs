@@ -17,5 +17,22 @@ namespace appeufiz.Views
             InitializeComponent();
             this.BindingContext = new LoginViewModel();
         }
+
+        public void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new RegisterPage());
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            if(txtUsername.Text=="admin" && txtPassword.Text=="123")
+            {
+                Navigation.PushAsync(new AboutPage());
+            }
+            else
+            {
+                DisplayAlert("Ops...", "O usuario ou a senha está incorreta!", "Ok");
+            }
+        }
     }
 }
