@@ -18,20 +18,20 @@ namespace appeufiz.Views
             this.BindingContext = new LoginViewModel();
         }
 
-        public void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        public async void TapGestureRecognizer_TappedAsync(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new RegisterPage());
+            await Navigation.PushAsync(new RegisterPage());
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_ClickedAsync(object sender, EventArgs e)
         {
             if(txtUsername.Text=="admin" && txtPassword.Text=="123")
             {
-                Navigation.PushAsync(new AboutPage());
+                await Navigation.PushAsync(new ItemsPage());
             }
             else
             {
-                DisplayAlert("Ops...", "O usuario ou a senha está incorreta!", "Ok");
+                await DisplayAlert("Ops...", "O usuario ou a senha está incorreta!", "Ok");
             }
         }
     }

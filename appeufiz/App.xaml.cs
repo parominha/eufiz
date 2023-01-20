@@ -14,10 +14,12 @@ namespace appeufiz
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new LoginPage());
+
+
         }
 
-        protected override void OnStart()
+    protected override void OnStart()
         {
         }
 
